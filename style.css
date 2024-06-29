@@ -1,13 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .header {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 0 5%;
+    padding: 0 200px;
 }
 
 .logo {
@@ -34,18 +35,105 @@ ul {
 
 .starter {
 display: flex;
-gap: 48px;
 justify-content: space-between;
+margin: 50px 0;
 }
 
-/*.header-image{
+.textside {
+    display: flex;
+    gap:16px;
+    flex-direction: column;
+    align-items: baseline ;
+}
+
+.header-image{
     height: 200px;
-    width: 450px;
+    width: 600px;
     background-color: aqua;
-}*/
+    object-fit: cover;
+}
 
 .button-top {
-    background-color: #3882F6;
-    padding: 2px 8px;
+    border: none;
+}
+
+button { 
+    padding: 4px 30px;
     border-radius: 8px;
+    background-color: #3882F6;
+    color: white;
+    font-size: large;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    border-radius: 16px;
+    border: 3px solid #3882F6;
+}
+
+.imagebox {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.box {
+    width: 150px;;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding:100px 300px;
+}
+
+.quotetext {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quoteauthor {
+    font-size: 20px;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.sighup {
+    display: flex;
+    background-color:#3882F6;
+    width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.button-bot {
+    margin: auto;
+    border: 2px solid white;
+}
+
+.click {
+    margin: 8px 0;
+    color: white;
+}
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
 }
